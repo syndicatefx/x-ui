@@ -42,6 +42,6 @@ __These are an opinionated choice and built for my personal use__, but it is sti
 - `.hover-animate` (with editable timing and easing variables in vars.sass), which when used together with `.hover-*` classes adds transition animation to all background-color, border-color, color
 - `.mt-auto` and `.mb-auto` classes
 
-## Forms
+### Forms
 
 The `_forms.sass` file includes a hard reset for all form elements and some default styles and classes for checkbox and radio inputs. This is an experiment on building custom designed form elements using as much of the available utility classes as possible. The pros are that you can design everything in your markup without touching the css, the cons are that it will require more markup to achieve the desired effect. Use at your own risk, or delete and substitute these with something more robust like [formbase.css](https://github.com/electerious/formbase)
