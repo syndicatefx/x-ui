@@ -4,7 +4,7 @@ x-ui is based on a modified/stripped version of [Tachyons CSS](http://tachyons.i
 
 Some of the original utility classes have been removed, and others have been added, along with a reorganization of the available breakpoints, support for custom color palettes, and minimal browser reset styles. 
 
-These are an opinionated choice and built for my personal use, but it is still very flexible to add/change almost everything and still keep the same Tachyons like API concept intact.
+__These are an opinionated choice and built for my personal use__, but it is still very flexible to add/change almost everything and still keep the same Tachyons like API concept intact.
 
 ## What utilities have been removed from the original
 
