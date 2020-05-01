@@ -1,0 +1,43 @@
+input, textarea, select, button
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+    font-family: inherit
+    font-size: 100%
+    line-height: 1.15
+    outline: none
+    resize: vertical
+    box-shadow: none
+    border-radius: 0
+
+select::-ms-expand 
+    display: none
+
+[type="checkbox"], [type="radio"]
+    width: 1.25rem
+    height: 1.25rem
+
+.switch
+    width: 2.5rem
+
+[type="checkbox"] + *, [type="radio"] + *, .switch + *
+    transition: all $animation-duration $animation-timing
+
+[type="checkbox"]:not(.switch) + *, [type="radio"]:not(.switch) + *
+    transform: scale(0)
+
+[type="checkbox"]:checked + *, [type="radio"]:checked + *
+    transform: scale(1)
+
+.switch:checked + *
+    transform: translateX(1.25rem)
+.switch:checked
+    background-color: currentColor
+
+.input-reset
+  -webkit-appearance: none
+  -moz-appearance: none
+
+.button-reset::-moz-focus-inner, .input-reset::-moz-focus-inner
+  border: 0
+  padding: 0
