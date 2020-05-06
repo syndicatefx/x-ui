@@ -17,6 +17,8 @@ If you would like to give it a spin, using the default color scheme and settings
 
 A work-in-progress list of examples you can copy/paste and modify can be found on this [Codepen collection](https://codepen.io/collection/nmpOPG)
 
+__Note__: Some of them will use [alpine.js]() for interactivity, which is a personal choice and a beautiful combination to use with x-ui.
+
 ## What utilities have been removed from the original
 
 - normalize.css
