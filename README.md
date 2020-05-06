@@ -8,7 +8,7 @@ __These are an opinionated choice and built for my personal use__, but it is sti
 
 ## Quick usage
 
-If you would like to give it a spin, and using the default color scheme provided, place this in the `<head>` of your HTML file:
+If you would like to give it a spin, using the default color scheme and settings provided, place this in the `<head>` of your HTML file:
 ```
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/syndicatefx/x-ui/x-ui.min.css">
 ```
