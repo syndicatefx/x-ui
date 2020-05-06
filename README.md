@@ -6,6 +6,13 @@ Some of the original utility classes have been removed, and others have been add
 
 __These are an opinionated choice and built for my personal use__, but it is still very flexible to add/change almost everything and still keep the same Tachyons like API concept intact.
 
+## Quick usage
+
+If you would like to give it a spin, as is, with the default color scheme provided:
+```
+https://cdn.jsdelivr.net/gh/syndicatefx/x-ui/x-ui.min.css
+```
+
 ## What utilities have been removed from the original
 
 - normalize.css
