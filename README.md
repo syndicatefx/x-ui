@@ -13,6 +13,10 @@ If you would like to give it a spin, using the default color scheme and settings
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/syndicatefx/x-ui/x-ui.min.css">
 ```
 
+### Example components
+
+A work-in-progress list of examples you can copy/paste and modify can be found on this [Codepen collection](https://codepen.io/collection/nmpOPG)
+
 ## What utilities have been removed from the original
 
 - normalize.css
