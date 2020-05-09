@@ -8,7 +8,7 @@ __These are an opinionated choice and built for my personal use__, but it is sti
 
 ### Example components
 
-A work-in-progress list of examples you can copy/paste and modify can be found on this [Codepen collection](https://codepen.io/collection/nmpOPG)
+A work-in-progress list of examples, using the default settings, you can copy/paste and modify can be found on this [Codepen collection](https://codepen.io/collection/nmpOPG)
 
 __Note__: Some of them will use [alpine.js](https://github.com/alpinejs/alpine) for interactivity, which is a personal choice and a beautiful combination to use with x-ui.
 
