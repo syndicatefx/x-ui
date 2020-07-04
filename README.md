@@ -4,7 +4,7 @@ x-ui is based on a modified/stripped version of [Tachyons CSS](http://tachyons.i
 
 Some of the original utility classes have been removed, and others have been added, along with a reorganization of the available breakpoints, support for custom color palettes, and minimal browser reset styles. 
 
-__These are an opinionated choice and built for my personal use__, but it is still very flexible to add/change almost everything and still keep the same Tachyons like API concept intact.
+__These are an opinionated choice and built for my personal use__, but it is still very flexible to add/change almost everything to suit specific use cases.
 
 ## What utilities have been removed from the original
 
@@ -44,4 +44,4 @@ __These are an opinionated choice and built for my personal use__, but it is sti
 
 ### Forms
 
-The `_forms.sass` file includes a hard reset for all form elements and some default styles and classes for checkbox and radio inputs. This is an experiment on building custom designed form elements using as much of the available utility classes as possible. The pros are that you can design everything in your markup without touching the css, the cons are that it will require more markup to achieve the desired effect. Use at your own risk, or delete and substitute these with something more robust like [formbase.css](https://github.com/electerious/formbase)
+The `_forms.sass` file includes some default properties for inputs. This is an experiment on building custom designed form elements using as much of the available utility classes as possible. The pros are that you can design almost everything in your markup without touching the css, the cons are that it will require more markup to achieve the desired effect. Use at your own risk, or delete and substitute these with something more robust like [formbase.css](https://github.com/electerious/formbase)

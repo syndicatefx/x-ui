@@ -1,22 +1,127 @@
+.bg-transparent
+    background-color: transparent
+
+.b--transparent
+    border-color: transparent
+
+.b--inherit
+    border-color: inherit
+    
 @each $name, $color in $color-list
-  .#{$name}
-    color: $color
+    .#{$name}
+        color: $color
+
+    .hover-#{$name}
+        &:hover, &:focus
+            color: $color
+
+    .bg-#{$name}
+        background-color: $color
+
+    .hover-bg-#{$name}
+        &:hover, &:focus
+            background-color: $color
+
+    .b--#{$name}
+        border-color: $color
+
+    .hover-b--#{$name}
+        &:hover, &:focus
+            border-color: $color
+            
+
+@media screen and (min-width: $bp-m)
+    .bg-transparent-m
+        background-color: transparent
+
+    .b--transparent-m
+        border-color: transparent
+
+    .b--inherit-m
+        border-color: inherit
     
-  .hover-#{$name}
-    &:hover, &:focus
-      color: $color
-      
-  .bg-#{$name}
-    background-color: $color
+    @each $name, $color in $color-list
+        .#{$name}-m
+            color: $color
+
+        .hover-#{$name}-m
+            &:hover, &:focus
+                color: $color
+
+        .bg-#{$name}-m
+            background-color: $color
+
+        .hover-bg-#{$name}-m
+            &:hover, &:focus
+                background-color: $color
+
+        .b--#{$name}-m
+            border-color: $color
+
+        .hover-b--#{$name}-m
+            &:hover, &:focus
+                border-color: $color
+
+@media screen and (min-width: $bp-l)
+    .bg-transparent-l
+        background-color: transparent
+
+    .b--transparent-l
+        border-color: transparent
+
+    .b--inherit-l
+        border-color: inherit
     
-  .hover-bg-#{$name}
-    &:hover, &:focus
-      background-color: $color
-      
-  .b--#{$name}
-    border-color: $color
+    @each $name, $color in $color-list
+        .#{$name}-l
+            color: $color
+
+        .hover-#{$name}-l
+            &:hover, &:focus
+                color: $color
+
+        .bg-#{$name}-l
+            background-color: $color
+
+        .hover-bg-#{$name}-l
+            &:hover, &:focus
+                background-color: $color
+
+        .b--#{$name}-l
+            border-color: $color
+
+        .hover-b--#{$name}-l
+            &:hover, &:focus
+                border-color: $color
+
+@media screen and (min-width: $bp-xl)
+    .bg-transparent-xl
+        background-color: transparent
+
+    .b--transparent-xl
+        border-color: transparent
+
+    .b--inherit-xl
+        border-color: inherit
     
-  .hover-b--#{$name}
-    &:hover, &:focus
-      border-color: $color
-  
+    @each $name, $color in $color-list
+        .#{$name}-xl
+            color: $color
+
+        .hover-#{$name}-xl
+            &:hover, &:focus
+                color: $color
+
+        .bg-#{$name}-xl
+            background-color: $color
+
+        .hover-bg-#{$name}-xl
+            &:hover, &:focus
+                background-color: $color
+
+        .b--#{$name}-xl
+            border-color: $color
+
+        .hover-b--#{$name}-xl
+            &:hover, &:focus
+                border-color: $color
