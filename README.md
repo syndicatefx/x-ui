@@ -6,12 +6,6 @@ Some of the original utility classes have been removed, and others have been add
 
 __These are an opinionated choice and built for my personal use__, but it is still very flexible to add/change almost everything and still keep the same Tachyons like API concept intact.
 
-### Example components
-
-A work-in-progress list of examples, using the default settings, you can copy/paste and modify can be found on this [Codepen collection](https://codepen.io/collection/nmpOPG)
-
-__Note__: Some of them will use [alpine.js](https://github.com/alpinejs/alpine) for interactivity, which is a personal choice and a beautiful combination to use with x-ui.
-
 ## What utilities have been removed from the original
 
 - normalize.css
