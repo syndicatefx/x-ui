@@ -29,7 +29,7 @@ __These are an opinionated choice and built for my personal use__, but it is sti
 - A separate `vars.sass` file to edit/modify color variables, breakpoint values and transition timing and duration
 - Minimal reset and basic browser default overrides
 - Default system fonts only
-- Opinionated color palette for background-color, border-color and color.
+- Opinionated color palette for background-color, border-color and color. Available on all breakpoints.
 - The above color palette also contemplates :hover & :focus states for background-color, border-color and color
 - Custom box-shadow utility classes
 - breakpoints use min-width only
@@ -41,6 +41,7 @@ __These are an opinionated choice and built for my personal use__, but it is sti
 
 - `.hover-animate` (with editable timing and easing variables in vars.sass), which when used together with `.hover-*` classes adds transition animation to all background-color, border-color, color
 - `.mt-auto` and `.mb-auto` classes
+- `.z-*`, `.o-*` now available in all breakpoints, and a new `.z--1`: `z-index: -1` was added to all breakpoints too.
 
 ### Forms
 
