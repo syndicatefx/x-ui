@@ -94,9 +94,9 @@ Select:
     <label class="db f6 fw7 mb3 gray-8" for="country">Choose materials</label>
     <div class="relative mb4">
         <select class="input-reset w-100 pa2 mb3 gray-8 ba b--gray-4 hover-animate hover-b--gray-8 br2" id="country">
-            <option value="china">Plastic</option>
-            <option value="russia">Metal</option>
-            <option value="usa" selected="">Wood</option>
+            <option value="plastic">Plastic</option>
+            <option value="metal">Metal</option>
+            <option value="wood" selected="">Wood</option>
         </select>
         <svg viewPort="0 0 16 12" width="16" height="12" fill="none" stroke="currentColor" stroke-width="2" class="absolute right-0 top-1 mr2 nt1 gray-8" aria-hidden="true">
             <polyline points="2,2 8,8 14,2" />
