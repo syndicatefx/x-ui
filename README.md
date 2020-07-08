@@ -53,7 +53,7 @@ Using _forms.sass you can customize checkbox, radio and select this way:
 
 Radio buttons:
 
-```
+```html
     <div class="mv4">
         <label class="db f6 fw7 mb3 gray-8">Choose a finish</label>
         <label class="relative flex items-center f6 mb3 gray-8">
@@ -77,7 +77,7 @@ Radio buttons:
 
 Checkbox:
 
-```
+```html
     <label class="relative flex items-start f6 mb3 gray-8">
         <input class="clip" type="checkbox" checked="">
         <span class="db w1 h1 mr2 ba b--gray-4 br2" aria-hidden="true"></span>
@@ -90,7 +90,7 @@ Checkbox:
 
 Select:
 
-```
+```html
     <label class="db f6 fw7 mb3 gray-8" for="country">Choose materials</label>
     <div class="relative mb4">
         <select class="input-reset w-100 pa2 mb3 gray-8 ba b--gray-4 hover-animate hover-b--gray-8 br2" id="country">
