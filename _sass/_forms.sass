@@ -10,17 +10,17 @@ input, textarea, select, button
 select::-ms-expand 
     display: none
 
-[type="checkbox"], [type="radio"]
-    width: 1.25rem
-    height: 1.25rem
-
-[type="checkbox"] + *, [type="radio"] + *
+[type="checkbox"] ~ *, [type="radio"] ~ *
     transition: all $animation-duration $animation-timing
 
-[type="checkbox"] + *, [type="radio"] + *
-    transform: scale(0)
+[type="checkbox"]:focus ~ span, [type="radio"]:focus ~ span
+    border-color: currentColor
 
-[type="checkbox"]:checked + *, [type="radio"]:checked + *
+[type="checkbox"] ~ svg, [type="radio"] ~ svg
+    transform: scale(0)
+    transform-origin: center center
+
+[type="checkbox"]:checked ~ svg, [type="radio"]:checked ~ svg
     transform: scale(1)
 
 .input-reset
