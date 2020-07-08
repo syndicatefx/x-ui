@@ -46,3 +46,60 @@ __These are an opinionated choice and built for my personal use__, but it is sti
 ### Forms
 
 The `_forms.sass` file includes some default properties for inputs. This is an experiment on building custom designed form elements using as much of the available utility classes as possible. The pros are that you can design almost everything in your markup without touching the css, the cons are that it will require more markup to achieve the desired effect. Use at your own risk, or delete and substitute these with something more robust like [formbase.css](https://github.com/electerious/formbase)
+
+#### Example
+
+Using _forms.sass you can customize checkbox, radio and select this way:
+
+Radio buttons:
+
+```
+    <div class="mv4">
+        <label class="db f6 fw7 mb3 gray-8">Choose a finish</label>
+        <label class="relative flex items-center f6 mb3 gray-8">
+            <input class="clip" type="radio" name="finish" checked="">
+            <span class="db w1 h1 mr2 ba b--gray-4 br-100" aria-hidden="true"></span>
+            <svg viewPort="0 0 8 8" width="8" height="8" fill="currentColor" class="absolute ml1" aria-hidden="true">
+                <circle cx="4" cy="4" r="4"/>
+            </svg>
+            Mate
+        </label>
+        <label class="relative flex items-center f6 mb3 gray-8">
+            <input class="clip" type="radio" name="finish">
+            <span class="db w1 h1 mr2 ba b--gray-4 br-100" aria-hidden="true"></span>
+            <svg viewPort="0 0 8 8" width="8" height="8" fill="currentColor" class="absolute ml1" aria-hidden="true">
+                <circle cx="4" cy="4" r="4"/>
+            </svg>
+            Gloss
+        </label>
+    </div>
+```
+
+Checkbox:
+
+```
+    <label class="relative flex items-start f6 mb3 gray-8">
+        <input class="clip" type="checkbox" checked="">
+        <span class="db w1 h1 mr2 ba b--gray-4 br2" aria-hidden="true"></span>
+        <svg viewPort="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" class="absolute" aria-hidden="true">
+            <polyline points="3,8 7,12 13,4" />
+        </svg>
+        Send me updates
+    </label>
+```
+
+Select:
+
+```
+    <label class="db f6 fw7 mb3 gray-8" for="country">Choose materials</label>
+    <div class="relative mb4">
+        <select class="input-reset w-100 pa2 mb3 gray-8 ba b--gray-4 hover-animate hover-b--gray-8 br2" id="country">
+            <option value="china">Plastic</option>
+            <option value="russia">Metal</option>
+            <option value="usa" selected="">Wood</option>
+        </select>
+        <svg viewPort="0 0 16 12" width="16" height="12" fill="none" stroke="currentColor" stroke-width="2" class="absolute right-0 top-1 mr2 nt1 gray-8" aria-hidden="true">
+            <polyline points="2,2 8,8 14,2" />
+        </svg>
+    </div>
+```
