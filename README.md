@@ -30,6 +30,7 @@ __These are an opinionated choice and built for my personal use__, but it is sti
 - Minimal reset and basic browser default overrides
 - Default system fonts only
 - Opinionated color palette for background-color, border-color and color. Available on all breakpoints.
+- ![Image of x-ui color palette](http://syndicatefx.com/img/x-ui-colors.png)
 - The above color palette also contemplates :hover & :focus states for background-color, border-color and color
 - Custom box-shadow utility classes
 - breakpoints use min-width only
