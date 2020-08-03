@@ -2,9 +2,9 @@
 
 x-ui is based on a modified/stripped version of [Tachyons CSS](http://tachyons.io/), a functional CSS framework.
 
-Some of the original utility classes have been removed, and others have been added, along with a reorganization of the available breakpoints, support for custom color palettes, and minimal browser reset styles. 
+Some of the original utility classes have been removed, and others have been added, along with a reorganization of the available breakpoints, support for custom color palettes and box-shadows, and minimal browser reset styles. 
 
-__These are an opinionated choice and built for my personal use__, but it is still very flexible to add/change almost everything to suit specific use cases.
+__These are an opinionated choice and built for my personal use__, but still very flexible to add/change almost everything to suit specific use cases.
 
 ## What utilities have been removed from the original
 
@@ -26,13 +26,12 @@ __These are an opinionated choice and built for my personal use__, but it is sti
 
 ## What has been Modified/added
 
-- A separate `vars.sass` file to edit/modify color variables, breakpoint values and transition timing and duration
+- A separate `vars.sass` file to edit/modify color variables, box-shadow variables, breakpoint values and transition timing and duration
 - Minimal reset and basic browser default overrides
 - Default system fonts only
-- Opinionated color palette for background-color, border-color and color. Available on all breakpoints.
-- ![Image of x-ui color palette](http://syndicatefx.com/img/x-ui-colors.png)
+- Grayscale color palette for wireframing (background-color, border-color and color)
 - The above color palette also contemplates :hover & :focus states for background-color, border-color and color
-- Custom box-shadow utility classes
+- Custom box-shadow utility classes, includes :hover & :focus states for each
 - breakpoints use min-width only
 - new default breakpoints:
 
@@ -40,7 +39,7 @@ __These are an opinionated choice and built for my personal use__, but it is sti
     - `*-l` = 960px
     - `*-xl` = 1280px
 
-- `.hover-animate` (with editable timing and easing variables in vars.sass), which when used together with `.hover-*` classes adds transition animation to all background-color, border-color, color
+- `.hover-animate` (with editable timing and easing variables in vars.sass), which when used together with `.hover-*` classes adds transition animation to all background-color, border-color, color and box-shadows
 - `.mt-auto` and `.mb-auto` classes
 - `.z-*`, `.o-*` now available in all breakpoints, and a new `.z--1`: `z-index: -1` was added to all breakpoints too.
 
@@ -56,18 +55,18 @@ Radio buttons:
 
 ```html
     <div class="mv4">
-        <label class="db f6 fw7 mb3 gray-8">Choose a finish</label>
-        <label class="relative flex items-center f6 mb3 gray-8">
+        <label class="db f6 fw7 mb3 dark-gray">Choose a finish</label>
+        <label class="relative flex items-center mb3 dark-gray">
             <input class="clip" type="radio" name="finish" checked="">
-            <span class="db w1 h1 mr2 ba b--gray-4 br-100" aria-hidden="true"></span>
+            <span class="db w1 h1 mr2 ba b--mid-gray br-100" aria-hidden="true"></span>
             <svg viewPort="0 0 8 8" width="8" height="8" fill="currentColor" class="absolute ml1" aria-hidden="true">
                 <circle cx="4" cy="4" r="4"/>
             </svg>
             Mate
         </label>
-        <label class="relative flex items-center f6 mb3 gray-8">
+        <label class="relative flex items-center mb3 dark-gray">
             <input class="clip" type="radio" name="finish">
-            <span class="db w1 h1 mr2 ba b--gray-4 br-100" aria-hidden="true"></span>
+            <span class="db w1 h1 mr2 ba b--mid-gray br-100" aria-hidden="true"></span>
             <svg viewPort="0 0 8 8" width="8" height="8" fill="currentColor" class="absolute ml1" aria-hidden="true">
                 <circle cx="4" cy="4" r="4"/>
             </svg>
@@ -79,11 +78,11 @@ Radio buttons:
 Checkbox:
 
 ```html
-    <label class="relative flex items-start f6 mb3 gray-8">
+    <label class="relative flex items-center mb3 dark-gray">
         <input class="clip" type="checkbox" checked="">
-        <span class="db w1 h1 mr2 ba b--gray-4 br2" aria-hidden="true"></span>
-        <svg viewPort="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" class="absolute" aria-hidden="true">
-            <polyline points="3,8 7,12 13,4" />
+        <span class="db w1 h1 mr2 ba b--mid-gray br2" aria-hidden="true"></span>
+        <svg viewPort="0 0 16 16" width="16" height="16" class="absolute" aria-hidden="true">
+            <polyline points="3,8 7,12 13,4" fill="none" stroke="currentColor" stroke-width="2"/>
         </svg>
         Send me updates
     </label>
@@ -92,14 +91,14 @@ Checkbox:
 Select:
 
 ```html
-    <label class="db f6 fw7 mb3 gray-8" for="country">Choose materials</label>
+    <label class="db f6 fw7 mb3 dark-gray" for="country">Choose materials</label>
     <div class="relative mb4">
-        <select class="input-reset w-100 pa2 mb3 gray-8 ba b--gray-4 hover-animate hover-b--gray-8 br2" id="country">
-            <option value="plastic">Plastic</option>
-            <option value="metal">Metal</option>
-            <option value="wood" selected="">Wood</option>
+        <select class="input-reset w-100 pa2 mb3 dark-gray ba b--mid-gray hover-animate hover-b--dark-gray br2" id="country">
+            <option value="china">Plastic</option>
+            <option value="russia">Metal</option>
+            <option value="usa" selected="">Wood</option>
         </select>
-        <svg viewPort="0 0 16 12" width="16" height="12" fill="none" stroke="currentColor" stroke-width="2" class="absolute right-0 top-1 mr2 nt1 gray-8" aria-hidden="true">
+        <svg viewPort="0 0 16 12" width="16" height="12" fill="none" stroke="currentColor" stroke-width="2" class="absolute right-0 top-1 mr2 nt1 dark-gray" aria-hidden="true">
             <polyline points="2,2 8,8 14,2" />
         </svg>
     </div>
