@@ -2,7 +2,7 @@
 
 x-ui is based on a modified/stripped version of [Tachyons CSS](http://tachyons.io/), a functional CSS framework.
 
-Some of the original utility classes have been removed, and others have been added, along with a reorganization of the available breakpoints, support for custom color palettes and box-shadows, and minimal browser reset styles. 
+Some of the original utility classes have been removed, and others have been added, along with a reorganization of the available breakpoints, support for custom color palettes, box-shadows, and minimal browser reset styles. 
 
 __These are an opinionated choice and built for my personal use__, but still very flexible to add/change almost everything to suit specific use cases.
 
@@ -26,7 +26,7 @@ __These are an opinionated choice and built for my personal use__, but still ver
 
 ## What has been Modified/added
 
-- A separate `vars.sass` file to edit/modify color variables, box-shadow variables, breakpoint values and transition timing and duration
+- A separate `vars.sass` file to edit/modify deafults for: typescale, spacing(applied to paddings, margins, fixed widths and heights), colors, box-shadow, breakpoint values, transition timing and duration
 - Minimal reset and basic browser default overrides
 - Default system fonts only
 - Grayscale color palette for wireframing (background-color, border-color and color)
