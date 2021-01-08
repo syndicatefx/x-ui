@@ -18,12 +18,29 @@ $s4: 2rem
 $s5: 4rem
 $s6: 8rem
 $s7: 16rem
-    
-// generate color palette
-$color-list: ("color-0":var(--color-0),"color-1":var(--color-1),"color-2":var(--color-2),"color-3":var(--color-3),"orange":var(--orange),"red":var(--red),"green":var(--green),"blue":var(--blue),"yellow":var(--yellow))
 
+// colors
+$color-0: hsl(0,0%,98%)
+$color-1: hsl(0,0%,94%)
+$color-2: hsl(0,0%,74%)
+$color-3: hsl(0,0%,34%)
+
+$orange: hsl(35,100%,50%)
+$red: hsl(3,100%,59%)
+$green: hsl(135,59%,49%)
+$blue: hsl(211,100%,50%)
+$yellow: hsl(48,100%,50%)
+// generate color palette
+$color-list: ("color-0":$color-0,"color-1":$color-1,"color-2":$color-2,"color-3":$color-3,"orange":$orange,"red":$red,"green":$green,"blue":$blue,"yellow":$yellow)
+
+// box-shadows
+$shadow: 0 1px 3px 0 rgba(0,0,0,.14), 0 1px 2px 0 rgba(0,0,0,.1)
+$shadow-1: 0 4px 6px -1px rgba(0,0,0,.14), 0 2px 4px -1px rgba(0,0,0,.1)
+$shadow-2: 0 10px 15px -3px rgba(0,0,0,.14), 0 4px 6px -2px rgba(0,0,0,.11)
+$shadow-3: 0 20px 25px -5px rgba(0,0,0,.14), 0 10px 10px -5px rgba(0,0,0,.18)
+$shadow-4: 0 25px 50px -12px rgba(0,0,0,.4)
 // generate box-shadows
-$shadow-list: ("shadow":var(--shadow),"shadow-1":var(--shadow-1),"shadow-2":var(--shadow-2),"shadow-3":var(--shadow-3),"shadow-4":var(--shadow-4))
+$shadow-list: ("shadow":$shadow,"shadow-1":$shadow-1,"shadow-2":$shadow-2,"shadow-3":$shadow-3,"shadow-4":$shadow-4)
 
 // transitions
 $animation-duration: .3s !default

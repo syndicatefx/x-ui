@@ -29,9 +29,9 @@ __These are an opinionated choice and built for my personal use__, but still ver
 - A separate `vars.sass` file to edit/modify deafults for: typescale, spacing(applied to paddings, margins, fixed widths and heights), color list, box-shadow list, breakpoint values, transition timing and duration
 - Minimal reset and basic browser default overrides
 - Default system fonts only
-- Basic color palette for wireframing (background-color, border-color and color), using CSS variables and supports dark-mode. Edit color variables in _base.sass
+- Basic color palette for wireframing (background-color, border-color and color)
 - The above color palette also contemplates :hover & :focus states for background-color, border-color and color
-- Custom box-shadow utility classes, includes :hover & :focus states for each, dark-mode included. Edit box-shadow variables in _base.sass
+- Custom box-shadow utility classes, includes :hover & :focus states for each
 - breakpoints use min-width only
 - new default breakpoints:
 
