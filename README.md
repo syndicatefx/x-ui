@@ -26,12 +26,12 @@ __These are an opinionated choice and built for my personal use__, but still ver
 
 ## What has been Modified/added
 
-- A separate `vars.sass` file to edit/modify deafults for: typescale, spacing(applied to paddings, margins, fixed widths and heights), colors, box-shadow, breakpoint values, transition timing and duration
+- A separate `vars.sass` file to edit/modify deafults for: typescale, spacing(applied to paddings, margins, fixed widths and heights), color list, box-shadow list, breakpoint values, transition timing and duration
 - Minimal reset and basic browser default overrides
 - Default system fonts only
-- Grayscale color palette for wireframing (background-color, border-color and color)
+- Basic color palette for wireframing (background-color, border-color and color), using CSS variables and supports dark-mode. Edit color variables in _base.sass
 - The above color palette also contemplates :hover & :focus states for background-color, border-color and color
-- Custom box-shadow utility classes, includes :hover & :focus states for each
+- Custom box-shadow utility classes, includes :hover & :focus states for each, dark-mode included. Edit box-shadow variables in _base.sass
 - breakpoints use min-width only
 - new default breakpoints:
 
@@ -55,18 +55,18 @@ Radio buttons:
 
 ```html
     <div class="mv4">
-        <label class="db f6 fw7 mb3 dark-gray">Choose a finish</label>
-        <label class="relative flex items-center mb3 dark-gray">
+        <label class="db f6 fw7 mb3 color-3">Choose a finish</label>
+        <label class="relative flex items-center mb3 color-3">
             <input class="clip" type="radio" name="finish" checked="">
-            <span class="db w1 h1 mr2 ba b--mid-gray br-100" aria-hidden="true"></span>
+            <span class="db w1 h1 mr2 ba b--color-2 br-100" aria-hidden="true"></span>
             <svg viewPort="0 0 8 8" width="8" height="8" fill="currentColor" class="absolute ml1" aria-hidden="true">
                 <circle cx="4" cy="4" r="4"/>
             </svg>
             Mate
         </label>
-        <label class="relative flex items-center mb3 dark-gray">
+        <label class="relative flex items-center mb3 color-3">
             <input class="clip" type="radio" name="finish">
-            <span class="db w1 h1 mr2 ba b--mid-gray br-100" aria-hidden="true"></span>
+            <span class="db w1 h1 mr2 ba b--color-2 br-100" aria-hidden="true"></span>
             <svg viewPort="0 0 8 8" width="8" height="8" fill="currentColor" class="absolute ml1" aria-hidden="true">
                 <circle cx="4" cy="4" r="4"/>
             </svg>
@@ -78,9 +78,9 @@ Radio buttons:
 Checkbox:
 
 ```html
-    <label class="relative flex items-center mb3 dark-gray">
+    <label class="relative flex items-center mb3 color-3">
         <input class="clip" type="checkbox" checked="">
-        <span class="db w1 h1 mr2 ba b--mid-gray br2" aria-hidden="true"></span>
+        <span class="db w1 h1 mr2 ba b--color-2 br2" aria-hidden="true"></span>
         <svg viewPort="0 0 16 16" width="16" height="16" class="absolute" aria-hidden="true">
             <polyline points="3,8 7,12 13,4" fill="none" stroke="currentColor" stroke-width="2"/>
         </svg>
@@ -91,14 +91,14 @@ Checkbox:
 Select:
 
 ```html
-    <label class="db f6 fw7 mb3 dark-gray" for="country">Choose materials</label>
+    <label class="db f6 fw7 mb3 color-3" for="country">Choose materials</label>
     <div class="relative mb4">
-        <select class="input-reset w-100 pa2 mb3 dark-gray ba b--mid-gray hover-animate hover-b--dark-gray br2" id="country">
+        <select class="input-reset w-100 pa2 mb3 color-3 bg-color-0 ba b--color-2 hover-animate hover-b--color-3 br2" id="country">
             <option value="china">Plastic</option>
             <option value="russia">Metal</option>
             <option value="usa" selected="">Wood</option>
         </select>
-        <svg viewPort="0 0 16 12" width="16" height="12" fill="none" stroke="currentColor" stroke-width="2" class="absolute right-0 top-1 mr2 nt1 dark-gray" aria-hidden="true">
+        <svg viewPort="0 0 16 12" width="16" height="12" fill="none" stroke="currentColor" stroke-width="2" class="absolute right-0 top-1 mr2 nt1 color-3" aria-hidden="true">
             <polyline points="2,2 8,8 14,2" />
         </svg>
     </div>
