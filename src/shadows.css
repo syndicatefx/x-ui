@@ -1,0 +1,6 @@
+.shadow-m,.hover-shadow-m:hover,.focus-shadow-m:focus {
+    box-shadow: var(--shadow-m);
+}
+.shadow-s,.hover-shadow-s:hover,.focus-shadow-s:focus {
+    box-shadow: var(--shadow-s);
+}

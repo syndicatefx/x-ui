@@ -1,5 +1,7 @@
 # OS generated files #
 ######################
+node_modules/
+package-lock.json
 .DS_Store*
 ehthumbs.db
 Icon

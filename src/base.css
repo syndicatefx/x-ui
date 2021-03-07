@@ -1,0 +1,91 @@
+::selection {
+    background: var(--selectTextBg);
+    color: var(--selectTextFg);
+}
+
+::marker {
+    color: var(--markerColor);
+}
+
+::-webkit-scrollbar {
+    width: 8px
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--scrollBarThumb);
+    border-radius: 6px;
+}
+
+[hidden] {
+    visibility: hidden;
+}
+
+[disabled] {
+    cursor: not-allowed;
+}
+
+*:focus {
+    outline: none;
+}
+
+html {
+    font-family: system-ui;
+    font-size: 100%;
+    block-size: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    text-rendering: optimizeSpeed;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollBarThumb) transparent;
+}
+@supports (font-variation-settings: normal) {
+    html {
+        font-family: 'PT Root', system-ui;
+    } 
+    @font-face {
+        font-family: 'PT Root';
+        font-weight: 300 700;
+        font-style: normal;
+        src: url("PT-Root-UI_VF.woff2") format("woff2");
+        font-display: swap;
+    }
+}
+
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+*:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+svg {
+    max-height: 100%;
+    pointer-events: none;
+}
+
+body {
+    font-size: 1rem;
+    block-size: 100%;
+    font-feature-settings: "ss03" on;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul, ol {
+    list-style-position: inside;
+}

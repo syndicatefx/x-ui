@@ -1,0 +1,41 @@
+{
+  "name": "x-ui",
+  "version": "1.0.0",
+  "description": "A low-level starter kit of small, immutable, utility classes and minimal presets to rapidly wireframe web user interfaces",
+  "author": "Paulo Nunes <syndicatefx@gmail.com>",
+  "license": "MIT",
+  "postcss": {
+    "plugins": {
+      "postcss-easy-import": {},
+      "postcss-preset-env": {
+        "stage": "0",
+        "browsers": "defaults",
+        "features": {
+          "custom-properties": false
+        },
+        "preserve": false
+      },
+      "postcss-clean": {
+        "keepSpecialComments": "1"
+      }
+    }
+  },
+  "scripts": {
+    "css": "postcss src/x-ui.css -o css/x-ui.min.css",
+    "watch": "onchange 'src/**/*.css' -- npm-run-all css",
+    "build": "npm-run-all css",
+    "browsersync": "browser-sync start --server --files 'css/x-ui.min.css'",
+    "prestart": "npm-run-all css",
+    "start": "npm-run-all --parallel watch browsersync"
+  },
+  "devDependencies": {
+    "browser-sync": "latest",
+    "npm-run-all": "latest",
+    "onchange": "latest",
+    "postcss": "latest",
+    "postcss-clean": "latest",
+    "postcss-cli": "latest",
+    "postcss-easy-import": "latest",
+    "postcss-preset-env": "latest"
+  }
+}
