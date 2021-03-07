@@ -24,7 +24,7 @@
     "css": "postcss src/x-ui.css -o css/x-ui.min.css",
     "watch": "onchange 'src/**/*.css' -- npm-run-all css",
     "build": "npm-run-all css",
-    "browsersync": "browser-sync start --server --files 'css/x-ui.min.css'",
+    "browsersync": "browser-sync start --server --files 'css/x-ui.min.css' 'index.html'",
     "prestart": "npm-run-all css",
     "start": "npm-run-all --parallel watch browsersync"
   },
